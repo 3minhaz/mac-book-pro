@@ -9,9 +9,6 @@
     <title>Mac Book Pro</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <main>
         <section class="container">
             <div class="row mt-5">
@@ -20,40 +17,40 @@
                 </div>
                 <div class="col-7">
                     <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut praesentium optio fugiat, nulla architecto nam quis, minima at quibusdam exercitationem explicabo voluptates assumenda porro dolore sapiente et, labore ut animi.</p>
+                    <p>Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine 8GB unified memory 256GB SSD storage 13-inch Retina display with True Tone Backlit Magic Keyboard - US English Touch Bar and Touch IDTwo Thunderbolt / USB 4 ports</p>
 
                     <!-- memory button section -->
                     <div class="my-5">
                     <h3>Memory</h3>
-                    <button id="memory-8gb">8GB unified memory</button>
-                    <button id="memory-16gb">16GB unified memory</button>
+                    <button id="memory-8gb" class="rounded">8GB unified memory</button>
+                    <button id="memory-16gb" class="rounded">16GB unified memory</button>
                     </div>
                     <!-- storage section -->
                     <div class="my-5">
                     <h3>Storage</h3>
-                    <button id="storage-256">256GB SSD storage</button>
-                    <button id="storage-512">512GB SSD storage</button>
-                    <button id="storage-1TB">1TB SSD storage</button>
+                    <button id="storage-256" class="rounded">256GB SSD storage</button>
+                    <button id="storage-512" class="rounded">512GB SSD storage</button>
+                    <button id="storage-1TB" class="rounded">1TB SSD storage</button>
                     </div>
 
                     <!-- delivery section -->
                     <h3>Choose your delivery option</h3>
                     <div class="d-flex">                    
-                        <button class="me-2">Friday August 25 Free Prime Delivery</button>
-                        <button >Friday August 21 Delivery Charge $20</button>
+                        <button id="free-delivery" class="me-2 rounded">Friday August 25 Free Prime Delivery</button>
+                        <button id="delivery-charge" class="rounded">Friday August 21 Delivery Charge $20</button>
                     </div>
 
                     <!-- price calculation section -->
                     
                     <div class="d-flex justify-content-between w-50 mt-5 my-2">
                         <h4>Best Price</h4>
-                         <h4>$1299 </h4>     
+                         <h4>$<span id="base-price">1299</span></h4>     
                     </div>  
                     <hr class="w-50">                    
                     <div class="d-flex justify-content-between w-50 my-2">
                         
                         <h4>Extra memory cost</h4>
-                        <h4>$<span id="extra-memory">0</span></h4>                    
+                        <h4>$<span id="extra-memory-cost">0</span></h4>                    
                     </div>    
                     <hr class="w-50">                  
                     <div class="d-flex justify-content-between w-50 my-2">
@@ -64,7 +61,7 @@
                     <hr class="w-50">                                     
                     <div class="d-flex justify-content-between w-50 my-2">
                         <h4>Delivery charge</h4>
-                        <h4>$0</h4>            
+                        <h4 >$<span id="delivery-cost">0</span></h4>            
                     </div>  
                     <hr class="w-50">
                     <div class="d-flex justify-content-between w-50 my-4">
@@ -74,19 +71,16 @@
                     <hr class="w-50">
                     <div class="m-3">
                         <h5>Add promo code</h5>
-                        <input type="text">
-                        <button class="rounded bg-danger text-white">Apply</button>
+                        <input id="input" type="text">
+                        <button id="apply-btn" class="rounded bg-danger text-white px-4">Apply</button>
                     </div>                                  
                 </div>
                 <!-- promo section -->
-               <h1 class="text-center mt-3">Total: $1299</h1>
+               <h1 class="text-center mt-3">Total: $<span id="price-total-footer">1299</span></h1>
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
-    <!-- <script src="mac.js"></script> -->
-    <script src="function.js"></script>
+    <!-- js section started here -->
+    <script src="main.js"></script>
 </body>
 </html>
